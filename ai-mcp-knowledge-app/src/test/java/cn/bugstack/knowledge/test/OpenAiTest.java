@@ -120,14 +120,14 @@ public class OpenAiTest {
         documents.forEach(doc -> doc.getMetadata().put("knowledge", "知识库名称v2"));
         documentSplitterList.forEach(doc -> doc.getMetadata().put("knowledge", "知识库名称v2"));
 
-//        pgVectorStore.accept(documentSplitterList);
+        pgVectorStore.accept(documentSplitterList);
 
         log.info("上传完成");
     }
 
     @Test
     public void chat() {
-        String message = "王大瓜今年几岁";
+        String message = "沈希扬毕业于什么学校？";
 
         String SYSTEM_PROMPT = """
                 Use the information from the DOCUMENTS section to provide accurate answers but act as if you knew this information innately.

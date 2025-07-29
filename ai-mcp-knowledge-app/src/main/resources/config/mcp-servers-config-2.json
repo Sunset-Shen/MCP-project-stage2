@@ -1,0 +1,21 @@
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "/Users/shenxiyang/Desktop",
+        "/Users/shenxiyang/Desktop"
+      ]
+    },
+    "mcp-server-computer": {
+      "command": "java",
+      "args": [
+        "-Dspring.ai.mcp.server.stdio=true",
+        "-jar",
+        "/Users/shenxiyang/IdeaProjects/mcp-server-computer/target/mcp-server-computer-1.0.0.jar"
+      ]
+    }
+  }
+}
